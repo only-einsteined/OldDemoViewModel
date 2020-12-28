@@ -8,6 +8,13 @@
 
 
 #import "NHOldDemoViewModel.h"
+#import <NHNewDemoProtocolManager/NHNewDemoProtocolManager.h>
+#import <NHNewDemoViewModelProtocol/NHNewDemoViewModelProtocol.h>
+
+
+@interface NHOldDemoViewModel () <NHNewDemoViewModelProtocol>
+
+@end
 
 @implementation NHOldDemoViewModel
 

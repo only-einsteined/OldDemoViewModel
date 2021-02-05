@@ -8,15 +8,23 @@
 
 
 #import "NHOldDemoViewModel.h"
-#import <NHNewDemoProtocolManager/NHNewDemoProtocolManager.h>
-#import <NHNewDemoViewModelProtocol/NHNewDemoViewModelProtocol.h>
-
+#import <NewDemoProtocolManager/NHNewDemoProtocolManager.h>
+#import <NewDemoViewModelProtocol/NHNewDemoViewModelProtocol.h>
 
 @interface NHOldDemoViewModel () <NHNewDemoViewModelProtocol>
+
+@property (nonatomic, strong) UIColor *oldLabelColor;
+@property (nonatomic, strong) UIColor *oldLabelTextColor;
+@property (nonatomic, strong) UIColor *demoLabelColor;
+@property (nonatomic, strong) UIColor *demoLabelTextColor;
 
 @end
 
 @implementation NHOldDemoViewModel
+
++ (void)load {
+    [NHNewDemoProtocolManager registerClass:[NHOldDemoViewModel class] forProtocol:@protocol(NHNewDemoViewModelProtocol)];
+}
 
 - (UIColor *)nholdLabelColor {
     return _oldLabelColor;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OldDemoViewModel'
-  s.version          = '0.4.5'
+  s.version          = '0.4.7'
   s.summary          = 'A short description of OldDemoViewModel.'
 
 # This description is used to generate tags and improve search results.

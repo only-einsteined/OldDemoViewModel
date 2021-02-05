@@ -5,7 +5,9 @@ platform :ios, '10.0'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'OldDemoViewModel_Example' do
-  
+  pod 'OldDemoViewModel', :path => '../'
+  pod 'NewDemoProtocolManager', :path => '/Users/lichenbiao/Desktop/iosdevelopment/NewDemoProtocolManager'
+  pod 'NewDemoViewModelProtocol', :path => '/Users/lichenbiao/Desktop/iosdevelopment/NewDemoViewModelProtocol'
   target 'OldDemoViewModel_Tests' do
     inherit! :search_paths
 

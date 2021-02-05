@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OldDemoViewModel'
-  s.version          = '0.4.4'
+  s.version          = '0.4.5'
   s.summary          = 'A short description of OldDemoViewModel.'
 
 # This description is used to generate tags and improve search results.
@@ -26,8 +26,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'OldDemoViewModel/Classes/*{h,m}'
-  s.dependency 'NHNewDemoProtocolManager'
+  s.source_files = 'OldDemoViewModel/Code/*{h,m}'
+  s.dependency 'NewDemoProtocolManager'
   s.dependency 'NewDemoViewModelProtocol'
   
   # s.resource_bundles = {
